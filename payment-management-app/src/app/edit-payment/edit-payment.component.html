@@ -1,0 +1,36 @@
+<div *ngIf="isLoading">Loading payment details...</div>
+
+<form *ngIf="!isLoading" (ngSubmit)="onSubmit()">
+  <h2>Edit Payment</h2>
+
+  <mat-form-field>
+    <mat-label>First Name</mat-label>
+    <input matInput [(ngModel)]="payment.payee_first_name" name="firstName" required />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Last Name</mat-label>
+    <input matInput [(ngModel)]="payment.payee_last_name" name="lastName" required />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Due Amount</mat-label>
+    <input matInput type="number" [(ngModel)]="payment.due_amount" name="dueAmount" required />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Due Date</mat-label>
+    <input matInput type="date" [(ngModel)]="payment.payee_due_date" name="dueDate" required />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Status</mat-label>
+    <mat-select [(ngModel)]="payment.payee_payment_status" name="status" required>
+      <mat-option value="pending">Pending</mat-option>
+      <mat-option value="due_now">Due Now</mat-option>
+      <mat-option value="completed">Completed</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Update Payment</button>
+</form>

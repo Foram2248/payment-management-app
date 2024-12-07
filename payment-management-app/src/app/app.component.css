@@ -1,0 +1,15 @@
+/* app.component.css */
+.spacer {
+    flex: 1 1 auto; /* Push links to the right */
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  

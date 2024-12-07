@@ -1,0 +1,24 @@
+<h2>Add Payment</h2>
+<form (ngSubmit)="onSubmit()">
+  <mat-form-field>
+    <mat-label>First Name</mat-label>
+    <input matInput [(ngModel)]="payment.payee_first_name" name="firstName" required />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Last Name</mat-label>
+    <input matInput [(ngModel)]="payment.payee_last_name" name="lastName" required />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Due Amount</mat-label>
+    <input matInput type="number" [(ngModel)]="payment.due_amount" name="dueAmount" required />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Due Date</mat-label>
+    <input matInput type="date" [(ngModel)]="payment.payee_due_date" name="dueDate" required />
+  </mat-form-field>
+
+  <button mat-button type="submit">Add Payment</button>
+</form>
