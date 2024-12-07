@@ -1,6 +1,6 @@
 # Payment Management App
 
-This project is a comprehensive **Payment Management System** that allows users to track, update, and manage payment records with a robust frontend and backend integration. The system includes functionalities such as viewing, adding, updating, and deleting payment records. Additionally, evidence files related to payments can be uploaded, providing users with a seamless experience for managing payments.
+This project is a comprehensive **Payment Management System** that allows users to track, update, and manage payment records with a robust frontend and backend integration. The system includes functionalities such as viewing, adding, updating, and deleting payment records.
 
 The project also includes **data analysis** on payment records, such as calculating total due amounts, identifying overdue payments, and generating summary statistics about the payments.
 
@@ -9,7 +9,6 @@ The project also includes **data analysis** on payment records, such as calculat
 - **Add Payments**: Allows users to add new payment records.
 - **Edit Payments**: Modify payment details.
 - **Delete Payments**: Remove payment records from the system.
-- **Upload Payment Evidence**: Upload evidence files for completed payments.
 - **Data Analysis**: 
   - Calculates the **total due amount** across all payments.
   - Identifies **overdue payments** based on the due date.
